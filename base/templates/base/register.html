@@ -1,8 +1,9 @@
 {% extends 'base/main.html' %}
+{% load i18n %}
 {% block content %}
 
 <div class="header-bar">
-    <h1>Register</h1>
+    <h1>{% translate "Register" %}</h1>
 </div>
 
 <div class="card-body">
@@ -16,9 +17,9 @@
 
         <label for="">  {{form.password2.label}}</label>
         {{ form.password2 }}
-        <input style="margin-top: 10px" class="button" type="submit" value="Register">
+        <input style="margin-top: 10px" class="button" type="submit" value={% translate "Register"%}>
     </form>
-    <p>Already have an account? <a href="{%  url 'login'%}">Login</a></p>
+    <p>{% translate "Already have an account?" %} <a href="{%  url 'login'%}">{% translate "Login" %} </a></p>
 </div>
 
 {% endblock content %}

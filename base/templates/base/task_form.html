@@ -1,9 +1,10 @@
 {% extends 'base/main.html' %}
+{% load i18n %}
 {% block content %}
 
 
 <div class="header-bar">
-    <a href="{% url 'tasks' %}">&#8592; Back</a>
+    <a href="{% url 'tasks' %}">&#8592; {% translate "Back" %}</a>
 
 </div>
 
